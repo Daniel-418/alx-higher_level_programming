@@ -40,8 +40,9 @@ class Square:
             False (boolean): If the tuple is invalid
         """
 
-        if type(position) == tuple and len(position) == 2:
-            if position[0] >= 0 and position[1] >= 0:
+        if (type(position) == tuple and len(position) == 2):
+            if (position[0] >= 0 and type(position[0]) == int and
+                    position[1] >= 0 and type(position[1]) == int):
                 return True
             else:
                 return False
