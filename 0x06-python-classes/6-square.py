@@ -41,8 +41,8 @@ class Square:
         """
 
         if (type(position) == tuple and len(position) == 2):
-            if (position[0] >= 0 and type(position[0]) == int and
-                    position[1] >= 0 and type(position[1]) == int):
+            if (type(position[0]) == int and position[0] >= 0 and
+                type(position[1]) == int) and position[1] >= 0:
                 return True
             else:
                 return False
