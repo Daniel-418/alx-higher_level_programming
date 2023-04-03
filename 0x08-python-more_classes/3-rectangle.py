@@ -91,8 +91,9 @@ class Rectangle:
             return new_string
 
         for i in range(0, self.__height):
-            for i in range(0, self.__width):
+            for j in range(0, self.__width):
                 new_string = new_string + "#"
-            new_string = new_string + "\n"
+            if i != self.__height - 1:
+                new_string = new_string + "\n"
 
         return new_string
