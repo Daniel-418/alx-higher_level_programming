@@ -1,0 +1,58 @@
+Doc test for module ``4-print_square.py``
+_________________________________________
+-----------------------------------------
+
+Testing function ``print_square(size)``
+---------------------------------------
+
+Importing the module in the interactive session
+	>>> print_square = __import__('4-print_square').print_square
+
+
+Testing for normal use:
+	>>> print_square(4)
+	####
+	####
+	####
+	####
+	>>> print_square(10)
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	>>> print_square(1)
+	#
+
+
+Testing for an empty square (size = 0):
+	>>> print_square(0)
+
+
+Testing for Error when size is not an int:
+	>>> print_square("square")
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+	
+	>>> print_square(1.23)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+	>>> print_square(-1.32)
+	Traceback (most recent call last):
+		...
+	TypeError: size must be an integer
+
+
+Testing for Error when size is less than 0:
+	>>> print_square(-1)
+	Traceback (most recent call last):
+		...
+	ValueError: size must be >= 0

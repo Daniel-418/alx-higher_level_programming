@@ -1,0 +1,42 @@
+``3-say_my_name`` Doc Test
+--------------------------
+--------------------------
+
+``3-say_my_name`` contains a function:
+``say_my_name(firstname, lastname)`` that prints the user's
+name on the command line
+
+Importing the function for use in this doctest
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+Testing the function for normal use (2 strings passed):
+	>>> say_my_name("Daniel", "Komolafe")
+	My name is Daniel Komolafe
+
+
+Testing the funcion for normal use (1 string passed):
+	>>> say_my_name("Daniel")
+	My name is Daniel 
+
+
+Tesing the funtion for an int arg passed as lastname:
+	>>> say_my_name("Daniel", 14)
+	Traceback (most recent call last):
+	...
+	TypeError: last_name must be a string
+
+
+Testing the function for an int arg passed a firstname:
+	>>> say_my_name(14, "Daniel")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Testing the function for empty strings passed:
+	>>> say_my_name("", "")
+	My name is  
+
+Testing for an empty firstname:
+	>>> say_my_name("", "Komolafe")
+	My name is  Komolafe

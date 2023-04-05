@@ -1,0 +1,46 @@
+Testing ``0-add_integer`` module
+________________________________
+--------------------------------
+
+Import the file:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Addition of two regular numbers:
+	>>> add_integer(1, 2)
+	3
+
+Addition of two one negative, one positive number:
+	>>> add_integer(-1, 2)
+	1
+
+Addition of two negative numbers:
+	>>> add_integer(-4, -4)
+	-8
+
+Addition of a two floating point numbers:
+	>>> add_integer(4.52, 6.74)
+	10
+
+Addition of a float and an int:
+	>>> add_integer(3.01, 2)
+	5
+
+Addition of an int and a non int:
+	>>> add_integer(2, "bye")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+Addition of a non int and an int:
+	>>> add_integer("bye", 2)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+Only one argument supplied:
+	>>> add_integer(2)
+	100
+
+Addition of two very long numbers
+	>>> add_integer(100000000000000000000, 100000000000000000000)
+	200000000000000000000
