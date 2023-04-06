@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """This module contains a function used to print the user's name 
 on the command line
 """
