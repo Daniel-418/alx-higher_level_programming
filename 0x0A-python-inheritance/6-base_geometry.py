@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""base geometry class is defined here"""
 
 class BaseGeometry:
     """An empty class"""
