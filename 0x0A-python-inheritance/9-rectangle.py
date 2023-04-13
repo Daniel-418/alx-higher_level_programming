@@ -16,7 +16,7 @@ class Rectangle(BaseGeometry):
     def area(self):
         """A method that has not been implemented"""
 
-        return (0.5 * self.__width * self.__height)
+        return self.__width * self.__height
 
     def integer_validator(self, name, value):
         """Validates a number"""
