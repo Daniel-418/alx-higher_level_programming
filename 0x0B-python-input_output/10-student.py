@@ -22,4 +22,3 @@ class Student:
                     my_dict[i] = self.__dict__[i]
 
             return my_dict
-
