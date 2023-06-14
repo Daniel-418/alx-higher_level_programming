@@ -4,4 +4,5 @@ import json
 
 
 def from_json_string(my_str):
+    """loads from a file"""
     return json.loads(my_str)
