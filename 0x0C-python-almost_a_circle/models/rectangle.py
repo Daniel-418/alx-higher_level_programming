@@ -138,16 +138,19 @@ class Rectangle(Base):
                                                        self.__height)
 
     """Utility Methods"""
+    @staticmethod
     def _validate_int(name, value):
         """validates if input is an integer"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
 
+    @staticmethod
     def _validate_under_zero(name, value):
         """validates if input is less than 0"""
         if value < 0:
             raise ValueError("{} must be >= 0".format(name))
 
+    @staticmethod
     def _validate_under_or_equals_zero(name, value):
         """validates if input is under or equals to 0"""
         if value <= 0:
