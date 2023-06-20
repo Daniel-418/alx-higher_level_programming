@@ -120,6 +120,17 @@ class Rectangle(Base):
                 elif key == "y":
                     self.y = value
 
+    def to_dictionary(self):
+        """turns the attributes of this rectangle to a dictionary"""
+        rectangle_dict = {}
+        rectangle_dict['id'] = self.id
+        rectangle_dict['width'] = self.width
+        rectangle_dict['height'] = self.height
+        rectangle_dict['x'] = self.x
+        rectangle_dict['y'] = self.y
+
+        return rectangle_dict
+
     def __str__(self):
         """string method for this classs"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x,
