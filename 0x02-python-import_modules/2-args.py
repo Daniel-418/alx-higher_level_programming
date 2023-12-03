@@ -12,7 +12,9 @@ def main():
     counter = 1
     args_len = len(argv)
 
-    print("{} arguments.".format(args_len - 1))
+    print("{} {}.".format(
+                args_len - 1,
+                "argument" if args_len == 2 else "arguments"))
     if args_len > 1:
         for i in range(1, args_len):
             print("{}: {}".format(counter, argv[i]))
