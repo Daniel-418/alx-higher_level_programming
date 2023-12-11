@@ -6,7 +6,5 @@ def square_matrix_simple(matrix=[]):
     :param matrix: Input matrix
     :return: A new matrix with each element squared
     """
-    final_list = []
-    square = lambda x: x * x
 
-    return [list(map(square, row)) for row in matrix]
+    return [list(map(lambda x: x * x, row)) for row in matrix]
