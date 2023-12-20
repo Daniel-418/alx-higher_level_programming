@@ -12,11 +12,7 @@ class Square:
         initializes the class
         @param size: The size of the square
         """
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        if size < 0:
-            raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
 
     def area(self):
         return self.__size * self.__size
