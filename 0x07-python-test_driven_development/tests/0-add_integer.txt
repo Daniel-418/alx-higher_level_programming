@@ -1,0 +1,52 @@
+0-add_integer.py tests
+----------------------
+----------------------
+
+Tdd_integerhis module has just one function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Tests
+-----
+Numbers
+-------
+-------
+Two numbers:
+>>> add_integer(1, 1)
+2
+
+One negative and one positive:
+>>> add_integer(1, -2)
+-1
+
+Two floats:
+>>> add_integer(2.1, 1.3)
+3
+
+One number one float:
+>>> add_integer(5, 2.4)
+7
+
+
+Odd Arguments
+-------------
+-------------
+One number and one string:
+>>> add_integer(1, "My name is Daniel")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer("My name is Daniel", 1)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+One number argument:
+>>> add_integer(2)
+100
+
+One non number argument:
+>>> add_integer("My name is Daniel")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
