@@ -1,0 +1,44 @@
+Source file: 3-say_my_name.py
+
+*import the function
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+*create variables
+>>> first_name, last_name = "Daniel", "Komolafe"
+
+
+TESTS
+-----
+
+
+*Normal function:
+
+*Two name provided:
+>>> say_my_name(first_name, last_name)
+My name is Daniel Komolafe
+
+*One name provided:
+>>> say_my_name(first_name)
+My name is Daniel 
+
+*empty first and last name:
+>>> say_my_name("", "")
+My name is  
+
+>>> say_my_name("")
+My name is  
+
+
+*Odd arguments
+
+*non-string firstname:
+>>> say_my_name(12, last_name)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+*non-string lastname:
+>>> say_my_name(first_name, 12)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
