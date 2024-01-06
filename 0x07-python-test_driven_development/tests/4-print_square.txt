@@ -1,0 +1,44 @@
+Source File: 4-print_square.py
+
+*Import the function
+>>> print_square = __import__('4-print_square').print_square
+
+Tests
+-----
+
+*Normal utility
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square(2)
+##
+##
+
+>>> print_square(1)
+#
+
+>>> print_square(0)
+
+
+*Odd Arguments
+--------------
+*Non-int size
+>>> print_square("one")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+*Negative size
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+*Float size
+>>> print_square(0.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
