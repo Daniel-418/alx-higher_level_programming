@@ -4,4 +4,5 @@ of an object"""
 
 
 def lookup(obj):
+    """return the object and fadfa"""
     return dir(obj)
