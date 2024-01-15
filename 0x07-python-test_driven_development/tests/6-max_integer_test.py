@@ -15,6 +15,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-2, -1, 0, 1, 2]), 2)
         self.assertEqual(max_integer([]), None)
         self.assertEqual(max_integer([1]), 1)
+        self.assertEqual(max_integer([1, 2, 3, 4, 5, 4, 3, 2, 1]), 5)
 
     def test_module_docstring(self):
         """Test if the module docstring exists"""
@@ -22,7 +23,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertTrue(len(m) > 1)
 
     def test_function_docstring(self):
-        """  
+        """
         Checks for the function docstring
         """
         f = max_integer.__doc__
@@ -35,6 +36,7 @@ class TestMaxInteger(unittest.TestCase):
             max_integer(None)
         with self.assertRaises(TypeError):
             max_integer([1, 2, "Hello", 4, 5])
+
 
 if __name__ == "__main__":
     unittest.main()
