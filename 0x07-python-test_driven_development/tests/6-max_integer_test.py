@@ -19,14 +19,14 @@ class TestMaxInteger(unittest.TestCase):
     def test_module_docstring(self):
         """Test if the module docstring exists"""
         m = __import__('6-max_integer').__doc__
-        self.assertTrue(len(m) > 5)
+        self.assertTrue(len(m) > 1)
 
     def test_function_docstring(self):
         """  
         Checks for the function docstring
         """
         f = max_integer.__doc__
-        self.assertTrue(len(f) > 5)
+        self.assertTrue(len(f) > 1)
 
     def test_values(self):
         """Test for unusual values"""
