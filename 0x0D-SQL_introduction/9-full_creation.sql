@@ -1,3 +1,4 @@
+-- This is a comment before the query
 CREATE TABLE `second_table` (
 id INT,
 name VARCHAR(256),
