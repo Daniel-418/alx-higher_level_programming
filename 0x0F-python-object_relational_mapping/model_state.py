@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" Uses sql alchemy to create a table in a database """
+"""
+Uses sql alchemy to create a table in a database
+to work with the ORM
+"""
 
 
 from SQLAlchemy import Column, Integer, String
