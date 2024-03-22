@@ -1,22 +1,23 @@
 #!/usr/bin/python3
 """
-Uses sql alchemy to create a table in a database
-to work with the ORM
+This script defines a State class and
+a Base class to work with MySQLAlchemy ORM.
 """
 
-
-from SQLAlchemy import Column, Integer, String
-from SQLAlchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
 
 class State(Base):
-    """ States class
+    """State class
+
     Attributes:
-        __tablename__ (str): The name of the table
-        id (int): The state id of the class
-        name (string): The state name of the class
+        __tablename__ (str): The table name of the class
+        id (int): The State id of the class
+        name (str): The State name of the class
+
     """
     __tablename__ = 'states'
 
