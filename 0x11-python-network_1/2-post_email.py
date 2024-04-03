@@ -8,6 +8,8 @@ import sys
 def main():
     url = sys.argv[1]
     data = {'email': sys.argv[2]}
+    data = urllib.parse.urlencode(data)
+    data = data.encode('ascii')
     req = urllib.request.Request(url, data=data, method='POST')
 
     with urllib.request.urlopen(req) as resource:
