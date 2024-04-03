@@ -6,7 +6,7 @@ import sys
 
 def main():
     response = requests.get(sys.argv[1])
-    print("{}".format(response.headers['X-Request-Id']))
+    print("{}".format(response.headers.get('X-Request-Id')))
 
 
 if __name__ == "__main__":
