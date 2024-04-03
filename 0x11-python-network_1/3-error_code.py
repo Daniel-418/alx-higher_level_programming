@@ -10,7 +10,7 @@ def main():
     url = sys.argv[1]
 
     try:
-        with urllib.request.urlopen(req) as resource:
+        with urllib.request.urlopen(url) as resource:
             print(resource.read().decode('utf-8'))
 
     except urllib.error.HTTPError as e:
