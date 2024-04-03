@@ -15,4 +15,4 @@ if __name__ == "__main__":
     url = "https://api.github.com/user"
     auth = HTTPBasicAuth(username, pat)
     req = requests.get(url, auth=auth)
-        print(req.json().get("id"))
+    print(req.json().get("id"))
